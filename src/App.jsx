@@ -3,6 +3,7 @@ import "./App.css";
 import GameBoard from "./components/GameBoard";
 import GameContainer from "./components/GameContainer";
 import PlayerInfo from "./components/PlayerInfo";
+import Log from "./components/Log";
 
 function getCurrentPlayer(gameturn) {
   let currentPlayer = "X";
@@ -18,8 +19,6 @@ function App() {
   const activePlayer=getCurrentPlayer(gameTurn);
 
   function handleBoardClick(rowIndex, colIndex) {
-
-    console.log(`clicked on button ${rowIndex} ${colIndex}`);
     setGameTurn((turns) => {
       let currentPlayer = getCurrentPlayer(turns);
 
@@ -47,6 +46,7 @@ function App() {
           />
           <GameBoard onBtnSelect={handleBoardClick} turns={gameTurn} />
         </GameContainer>
+        <Log game={gameTurn}/>
       </div>
     </>
   );
