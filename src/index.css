@@ -7,3 +7,13 @@
 body{
     background-color: #FFEAD8;
 }
+
+button{
+    background-color: #FFEAD8;
+    color: #000000;
+}
+
+button:disabled{
+    background-color: #FFEAD8;
+    color: #000000;
+}
