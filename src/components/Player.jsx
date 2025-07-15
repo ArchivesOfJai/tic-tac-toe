@@ -12,13 +12,13 @@ export default function Player({ symbol, name, isActive, onNameChange }) {
     onNameChange(symbol, e.target.value);
   }
 
-  let tag = <span className="px-3 text-white w-75">{name}</span>;
+  let tag = <span className="px-3 fs-6 text-white w-75">{name}</span>;
 
   if (isEditable) {
     tag = (
       <input
         type="text"
-        className="w-75 rounded border-0"
+        className="w-75 fs-6 rounded border-0"
         value={name}
         defaultValue={name}
         onChange={handleChange}
