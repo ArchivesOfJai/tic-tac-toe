@@ -1,27 +1,28 @@
-.gameContainer{
-    width:35vw;
-    background-color: #5EABD6;
-    padding:1rem 0;
+.container{
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* Mobile */
 @media (max-width: 575.98px) {
-  .gameContainer{
+  .container{
     width: 80vw;
   }
 }
 
 /* Tablet */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .gameContainer{
+  .container{
     width: 60vw;
   }
 }
 
 /* Medium Devices */
 @media (min-width: 768px) and (max-width: 991.98px) {
- .gameContainer{
+ .container{
     width: 50vw;
   }
 }
