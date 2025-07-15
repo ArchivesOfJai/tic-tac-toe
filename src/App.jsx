@@ -80,7 +80,7 @@ function App() {
   }
 
   return (
-    <div className="position-relative pt-5">
+    <div className="position-relative pt-5 mt-5">
       <div
         className="d-flex flex-column justify-content-center align-items-center"
         style={{ height: "100vh" }}
